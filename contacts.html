@@ -1,0 +1,117 @@
+<!doctype html>
+
+<head>
+	<meta charset="utf-8">
+	<title>ДИПЛОМЕН ПРОЕКТ</title>
+	<link href="mycss.css" rel="stylesheet" type="text/css">
+	<link href="formstyling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div class="content">
+		<header class="header">
+			<h1>PANORAMA HOUSE</h1>
+		</header>
+		<nav class="mynav">
+			<ul class="menu" id="align-left">
+				<a href="index.html" id="logo"><img src="images/logo Panorama House.png" id="logo-img"></a>
+				<a href="reservation.html">
+					<li>Резервация</li>
+				</a>
+				<a href="prices.html">
+					<li>Цени</li>
+				</a>
+				<a href="contacts.html" id="active">
+					<li>Контакти</li>
+				</a>
+				<a href="gallery.html">
+					<li>Галерия</li>
+				</a>
+			</ul>
+		</nav>
+		<main class="info">
+			<h2 class="section-title">Контакти</h2>
+			<section class="section-flex">
+				<div class="aside-content" style="width:50%;margin-left:3%;">
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2939.251639321051!2d23.82590321526656!3d41.63495208857438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14ab969bad57b8f9%3A0xbb9f1375fc1ccd55!2sPanorama%20House!5e1!3m2!1sbg!2sbg!4v1645051083363!5m2!1sbg!2sbg"
+						allowfullscreen="" loading="lazy"></iframe>
+				</div>
+				<div style="width: 50%;margin-right: 3%">
+					<div class="contact-banner">
+						<h2>Свържете се с нас</h2>
+						<p class="contact-description">
+							Бихме се радвали да прочетем Вашето мнение и да отговорим на Вашите въпроси
+						</p>
+					</div>
+					<form class="contact-form" name="contact-form">
+						<div class="form-flex-container">
+							<div class="form-control"><label for="fname">Име:</label>
+								<input type="text" id="fname" onkeyup="letterValidator('fname')" name="firstname"
+									placeholder="Вашето име...">
+								<div class="error hide">Моля въведете име</div>
+							</div>
+							<div class="form-control"><label for="lname">Фамилия:</label>
+								<input type="text" id="lname" name="lastname" onkeyup="letterValidator('lname')"
+									placeholder="Вашата фамилия...">
+								<div class="error hide">Невалидна фамилия</div>
+							</div>
+						</div>
+						<div class="form-flex-container">
+							<div class="form-control"><label for="phone">Телефон:</label>
+								<input type="text" id="phone" name="phone" placeholder="Вашият телефон...">
+								<div class="error hide">Невалиден телефон</div>
+							</div>
+							<div class="form-control"><label for="email">Електронна поща:</label>
+								<input type="text" id="email" name="email" placeholder="Вашият имейл...">
+								<div class="error hide">Невалиден имейл</div>
+							</div>
+						</div>
+						<div style="margin:0 100px;">
+						<div class="form-control"><label for="from">От:</label>
+							<input type="text" id="from" name="from" onkeyup="letterValidator('from')"
+								placeholder="Град/село...">
+							<div class="error hide">Невалидно местоположение</div>
+						</div>
+
+						<div class="form-control"><label for="subject">Тема:</label>
+							<input type="text" id="subject" name="subject" placeholder="Опишете темата...">
+							<div class="error hide">Моля въведете тема</div>
+						</div>
+					</div>
+						<div class="form-control"><label for="message">Съобщение:</label>
+							<textarea id="message" name="message" placeholder="Вашето съобщение"
+								style="height:200px"></textarea>
+							<div class="error hide">Напишете Вашето съобщение</div>
+						</div>
+						<p style="text-align:center;"><input type="submit" value="Изпрати" style="width:300px;"
+							id="button"></p>
+					</form>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer-contacts">
+				<h2>Свържете се с нас:</h2>
+				<p>с. Лещен</p>
+				<p>Тел: 088 399 9455</p>
+				<p>E-mail: panoramahouse@abv.bg</p>
+			</div>
+			<div class="socials">
+				<h2>Социални мрежи:</h2>
+				<a href="#"><img src="images/socials/ClipartKey_448511.png"></a>
+				<a href="#"><img src="images/socials/ClipartKey_775158.png"></a>
+				<a href="#"><img src="images/socials/ClipartKey_1982823.png"></a>
+			</div>
+			<div class="date" onload="showTime()">
+				<p id="clock"></p>
+				<p id="day"></p>
+			</div>
+	</footer>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="script.js"></script>
+	<script src="form.js"></script>
+</body>
+
+</html>

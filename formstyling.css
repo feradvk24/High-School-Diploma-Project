@@ -1,0 +1,100 @@
+
+.contact-banner {
+  background-image: linear-gradient(
+    to right,
+    rgb(0, 114, 66) 0%,
+    rgb(4, 109, 91) 100%
+  );
+  color: white;
+  padding: 40px;
+  text-align: center;
+}
+
+.invalid {
+  border: 1px solid red !important;
+}
+
+p {
+  font-size: 20px;
+  text-align:center;
+}
+
+.contact-description {
+  margin-bottom: 40px;
+}
+
+input[type=text] , input[type=date], input[type=number] {
+  padding: 10px;
+  border-radius: 5px;
+  width: 95%;
+  border: 1px solid rgb(0, 114, 66);
+  font-size: 18px;
+  outline: none;
+  color: #333;
+}
+
+.form-control {
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+label {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.hide {
+  opacity: 0;
+}
+
+textarea {
+  width: 80%;
+  border-radius: 5px;
+  outline: none;
+  padding: 10px;
+  height: 200px;
+  font-size: 18px;
+}
+
+#button {
+  color: black;
+  padding: 20px;
+  border: 1px solid rgb(0, 114, 66);
+  border-radius: 10px;
+  background: none;
+  cursor: pointer;
+  transition: all 0.5s;
+  color: rgb(0, 114, 66);
+}
+
+#button:hover {
+  background-image: linear-gradient(
+    to right,
+    rgb(0, 114, 66) 0%,
+    rgb(4, 109, 91) 100%
+  );
+  color: white;
+}
+
+form {
+  padding: 40px;
+  background-color:bisque;
+}
+
+.form-flex-container {
+  display:flex;
+  margin: 0px 40px;
+  justify-content: space-around;
+}
+
+.form-flex-container  input {
+  width: 95% !important;
+}

@@ -1,0 +1,130 @@
+<!doctype html>
+
+<head>
+	<meta charset="utf-8">
+	<title>ДИПЛОМЕН ПРОЕКТ</title>
+	<link href="mycss.css" rel="stylesheet" type="text/css">
+	<link href="formstyling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div class="content">
+		<header class="header">
+			<h1>PANORAMA HOUSE</h1>
+		</header>
+		<nav class="mynav">
+			<ul class="menu">
+				<a href="index.html" id="logo"><img src="images/logo Panorama House.png" id="logo-img"></a>
+				<a href="reservation.html" id="active">
+					<li>Резервация</li>
+				</a>
+				<a href="prices.html">
+					<li>Цени</li>
+				</a>
+				<a href="contacts.html">
+					<li>Контакти</li>
+				</a>
+				<a href="gallery.html">
+					<li>Галерия</li>
+				</a>
+			</ul>
+		</nav>
+		<main class="info">
+			<h2 class="section-title">Резервация</h2>
+			<section class="section-flex">
+				<div style="margin: 0 auto;width:55%">
+					<div class="contact-banner">
+						<h1>Формуляр за резервация</h1>
+					</div>
+					<form class="contact-form" method="post" name="contact-form">
+						<div class="form-flex-container">
+							<div class="form-control"><label for="fname">Име:</label>
+								<input type="text" id="fname" name="firstname" onkeyup="letterValidator('fname')" placeholder="Вашето име...">
+								<div class="error hide">Моля въведете име</div>
+							</div>
+							<div class="form-control"><label for="lname">Фамилия:</label>
+								<input type="text" id="lname" name="lastname" onkeyup="letterValidator('lname')" placeholder="Вашата фамилия...">
+								<div class="error hide">Невалидна фамилия</div>
+							</div>
+						</div>
+						<div class="form-flex-container">
+							<div class="form-control"><label for="phone">Телефон:</label>
+								<input type="text" id="phone" name="phone" placeholder="Вашият телефон...">
+								<div class="error hide">Невалиден телефон</div>
+							</div>
+							<div class="form-control"><label for="email">Електронна поща:</label>
+								<input type="text" id="email" name="email" placeholder="Вашият имейл...">
+								<div class="error hide">Невалиден имейл</div>
+							</div>
+						</div>
+						<div class="form-flex-container">
+							<div class="form-control"><label for="firstdate">Дата на пристигане:</label>
+								<input type="date" id="firstdate" name="fdate" min="">
+								<div class="error hide">Невалидна дата</div>
+							</div>
+							<div class="form-control">
+								<label for="lastdate">Дата на отпътуване:</label>
+								<input type="date" id="lastdate" name="ldate" disabled>
+								<div class="error hide">Невалидна дата</div>
+							</div>
+						</div>
+						<div style="margin:0 100px;">
+							<div class="form-control">
+								<label for="people">За колко души:</label>
+								<input type="number" id="people" name="people"
+									placeholder="За колко души е резервацията...">
+								<div class="error hide">Невалиден брой</div>
+							</div>
+							<div class="form-control">
+								<label for="kids">Ще има ли деца:
+									<input type="radio" name="yes/no" value="yes" id="yes" >
+									Да
+									<input type="radio" name="yes/no" value="no" id="no" checked>
+									Не</label>
+								<div id="display-kids">
+									<label for="kids">Брой деца:</label>
+									<input type="number" id="kids" name="kids"
+										placeholder="От които деца до 16 години са...">
+									<div class="error hide">Невалиден брой</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-control">
+							<label for="message">Допълнителни бележки:</label>
+							<textarea id="message" name="message" placeholder="" style="height:150px"></textarea>
+							<p style="text-align:center;"><input type="submit" value="Резервиране" id="button"></p>
+						</div>
+					</form>
+				</div>
+				<div class="aside-content">
+					<p class="photo"><img src="images/house/bedroom1.jpg" alt="spalnq" /></p>
+					<p class="photo"><img src="images/house/mehana6.jpg" alt="mehana" /></p>
+					<p class="photo"><img src="images/house/mehana8.jpg" alt="mehana2" /></p>
+					<p class="photo"><img src="images/house/pool1.jpg" alt="basein" /></p>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer-contacts">
+				<h2>Свържете се с нас:</h2>
+				<p>с. Лещен</p>
+				<p>Тел: 088 399 9455</p>
+				<p>E-mail: panoramahouse@abv.bg</p>
+			</div>
+			<div class="socials">
+				<h2>Социални мрежи:</h2>
+				<a href="#"><img src="images/socials/ClipartKey_448511.png"></a>
+				<a href="#"><img src="images/socials/ClipartKey_775158.png"></a>
+				<a href="#"><img src="images/socials/ClipartKey_1982823.png"></a>
+			</div>
+			<div class="date" onload="showTime()">
+				<p id="clock"></p>
+				<p id="day"></p>
+			</div>
+	</footer>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="script.js"></script>
+	<script src="reservationform.js"></script>
+</body>
+</html>
